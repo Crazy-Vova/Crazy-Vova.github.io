@@ -1,0 +1,257 @@
+body {
+	margin: 0px;
+}
+
+header {
+	width: 100%;
+	height: 750px;
+	background-color: #eff0f2;
+	background-image: url(pictures/Header.jpg);
+	background-position: 0px -10px;
+}
+
+.top {
+	padding-top: 30px;
+
+}
+.top__container {
+	display: flex;
+	justify-content: space-between;
+	height: 50px;
+	vertical-align: middle;
+}
+
+#logo {
+	cursor: pointer ;
+	width: 113px;
+	height: 46px;
+	margin-left: 170px;
+}
+#menu {
+	cursor: pointer ;
+	padding-top: 10px;
+	width: 30px;
+	height: 25px;
+	margin-right: 150px;
+}
+.header__info {
+	text-transform: uppercase;
+	text-align:  center;
+	margin-top: 0px;
+	display: flex;
+	justify-content: center;
+}
+.header__container {
+	padding: 0px;
+	margin: 0px;
+}
+.header__text {
+	margin-top: 150px;
+	padding-top: 0px;
+}
+.header__info p {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	font-size: 45px;
+	color: #505050;
+	text-shadow: 4px 4px 5px #acacac;
+}
+.header__info button {
+	margin-top: 120px;
+	width: 232px;
+	height: 53px;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 18px;
+	text-transform: uppercase;
+	border: 2px solid #777879;
+	transition: .3s linear;
+}
+.header__info button:hover {
+	box-shadow: 3px 3px #6f6f6f;
+}
+/* about us */
+.titles {
+	font-size: 38px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+.about_us {
+	height: 800px;
+	background-color: #f8fafa;
+}
+.about_us__title {
+	text-align: center;
+}
+#about_us_title {
+	font-size: 38px;
+	font-family: 'Montserrat', sans-serif;
+	padding-top: 30px;
+	font-weight: 700;
+	text-transform: uppercase;
+	padding-bottom: 0px;
+	margin-bottom: 1px;
+}
+#about_us_text {
+	font-family: 'Merriweather', serif;
+	font-size: 18px;
+	color: #5e5f5f;
+	text-transform: uppercase ;
+	letter-spacing: 2px;
+}
+.about_us__info {
+	width: 1070px;
+	height: 500px;
+	margin: 80px auto;
+	display: flex;
+	justify-content: space-between;
+}
+.about_us__img {
+	width: 479px;
+}
+.about_us__text {
+	width: 440px;
+}
+.as_h {
+	font-family: 'Merriweather', serif;
+	font-weight: 700;
+	font-size: 20px;
+	text-transform: uppercase;
+}
+.as_p {
+	color: #404141;
+	padding-top: 0px;
+	font-family: 'Raleway', sans-serif;
+	font-size: 16px;
+	padding-bottom: 20px;
+}
+
+/* works */
+
+.works {
+	height: 1020px;
+	width: 1139px;
+	margin: auto;
+	text-align: center;
+}
+.works__title {
+	padding-top: 30px;
+}
+.works__title p {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	font-size: 38px;
+	text-transform: uppercase;
+	margin-bottom: 15px;
+}
+.works__title span {
+	font-family: 'Merriweather', serif;
+	font-size: 17px;
+	color: #616161;
+	text-transform: uppercase;
+}
+.works__pictures {
+	width: 1139px;
+	margin-top: 30px;
+
+}
+.works__pictures_one {
+	display: flex;
+	justify-content: space-between;
+}
+.works__pictures_two {
+	margin-top: 13px;
+	display: flex;
+	justify-content: space-between;
+}
+.pictures {
+	overflow: hidden;
+	width: 370px;
+	height: 359px;
+}
+
+/* our services */
+
+.services {
+	height: 990px;
+}
+.services__title {
+	margin-top: 30px;
+	text-align: center;
+}
+.title_p {
+	font-family: 'Merriweather', serif;
+	font-size: 18px;
+	color: #5e5f5f;
+	text-transform: uppercase ;
+	letter-spacing: 1px;
+}
+#ser_t {
+	margin-bottom: 10px;
+}
+.services__container {
+	width: 1138px;
+	margin: 30px auto;
+	height: 755px;
+	background-color: white;
+	display: grid;
+	grid-template-areas: 
+    	"design design psd"
+    	"psdd designing designing";
+    grid-template-columns: 474px 164px 474px;
+    grid-template-rows: 370px 370px;
+    grid-gap: 13px;
+}
+.serv__designing {
+	grid-area: design;
+	background-image: url(pictures/services_one.jpg);
+	background-size: 655px;
+	background-position: 0px 0px;
+}
+.serv__psd {
+	grid-area: psd;
+	background-image: url(pictures/services_two.jpg);
+	background-size: 652px;
+	background-position: 0px -80px;
+}
+
+.serv__cool_psd {
+	grid-area: psdd;
+	background-image: url(pictures/services_three.jpg);
+	background-size: 652px;
+	background-position: 0px -80px;
+}
+.serv__cool_designing {
+	grid-area: designing;
+	background-image: url(pictures/services_last.jpg);
+	background-size: 652px;
+	background-position: 0px -50px;
+}
+.serv_text_container {
+	width: 70%;
+	margin: 150px 65px;
+}
+.serv_text_container p {
+	color: #fff;
+}
+.serv_h {
+	text-shadow: #000 1px 0 10px;
+	text-transform: uppercase;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	font-size: 20px;
+}
+.serv_p {
+	text-shadow: #000 1px 0 10px;
+	color: #404141;
+	font-family: 'Raleway', sans-serif;
+	font-size: 16px;
+}
+.team {
+	height: 1000px;
+	width: 1141px;
+	margin: 20px auto;
+}
+.team__title {
+	text-align: center;
+}
