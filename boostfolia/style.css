@@ -6,16 +6,17 @@ html, body {
 	padding-top: 0px;
 	background-color: #353535;
 	width: 100%;
-	height: 790px;
+	height: 770px;
 }
 .menu_bar {
+	position: fixed;
 	background-color: #fff;
 	width: 100%;
-	height: 90px;
+	height: 70px;
 }
 .menu__container {
 	margin: auto;
-	padding-top: 22.5px;
+	padding-top: 8px;
 	max-width: 1000px;
 	display: flex;
 	justify-content: space-between;
@@ -25,15 +26,16 @@ html, body {
 		width: 700px
 	}
 }
-
+li {
+	list-style: none;
+}
 #logo {
+	padding-top: 6px;
 	width: 224px;
 	height: 45px;
 }
-#menu {
-	width: 30px;
-	height: 25px;
-	margin-top: 10px;
+#burger_menu {
+	margin-top: 13px;
 }
 .top_info {
 	margin-top: 0px;
@@ -43,7 +45,7 @@ html, body {
 }
 @media (max-width: 1070px) {
   .top {
-  	height: 590px;
+  	height: 570px;
   }
   .top_info {
   	height: 500px;
@@ -67,14 +69,14 @@ html, body {
 }
 .top_title {
 	margin-top: 0px;
-	padding-top: 250px;
+	padding-top: 300px;
 	padding-bottom: 0px;
 	letter-spacing: 2px;
 	font-size: 72px;
 }
 @media (max-width: 1070px) {
   .top_title {
-  	padding: 150px 30px 0px 30px;
+  	padding: 200px 30px 0px 30px;
   	font-size: 60px;
   }
   .top_text {
@@ -83,7 +85,7 @@ html, body {
 }
 @media (max-width: 735px) {
   .top {
-  	height: 390px;
+  	height: 370px;
   }
   .top_info {
   	height: 300px;
@@ -92,7 +94,7 @@ html, body {
   	max-width: 500px
   }
   .top_title {
-  	padding: 60px 40px 0px 40px;
+  	padding: 100px 40px 0px 40px;
   	font-size: 50px;
   }
   .top_text {
@@ -106,7 +108,7 @@ html, body {
   }
   .top_title {
   	font-size: 45px;
-  	padding: 30px 3px 0px 3px;
+  	padding: 96px 3px 0px 3px;
   	margin-bottom: 20px;
   }
   .top_text {
@@ -114,7 +116,7 @@ html, body {
   	margin-top: 0px;
   }
   .top {
-  	height: 350px;
+  	height: 330px;
   }
   .top_info {
   	height: 260px;
@@ -123,6 +125,7 @@ html, body {
 /* about us  */
 .about {
 	height: 565px;
+	height: 100%;
 	text-align: center;
 }
 .about__title h2 {
@@ -162,8 +165,6 @@ html, body {
 	background-color: #dadada;
 }
 .about_img {
-	
-
 	display: table-cell;
   vertical-align: middle;
 	width: 60px;
@@ -217,4 +218,77 @@ html, body {
 	.about__title p {
 		padding: 0px 10px 0px 10px;
 	}
+}
+/* some features  */
+.features {
+	margin-top: 50px;
+	width: 100%;
+	height: 400px;
+	background-color: #171f23;
+}
+.features__title  h2{
+	margin-top: 0px;
+	padding-top: 55px;
+	text-align: center;
+	font-family: 'Roboto Condensed', sans-serif;
+	color: #fff;
+	font-size: 36px;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	margin-bottom: 10px;
+}
+.features__line {
+	width: 86px;
+	height: 1px;
+	background-color: #404040;
+	margin: 0px auto;
+}
+.features__container {
+	max-width: 900px;
+	margin: 44px auto;
+	font-family: 'Roboto', sans-serif;
+	display: flex;
+	justify-content: space-between;
+	text-align: center;
+}
+.features_p {
+	color: #fff;
+	font-size: 18px;
+	font-weight: 300;
+	margin: 0px;
+}
+.features__number {
+	color: #fff;
+	font-weight: 300;
+	font-size: 48px;
+	margin-top: 20px;
+	margin-bottom: 0px;
+}
+
+@media (max-width: 910px) {
+	.features__container {
+		max-width: 700px;
+	}
+}
+@media (max-width: 715px) {
+	.features__container {
+		max-width: 600px;	
+	}
+}
+@media (max-width: 605px) {
+	.features__container {
+		display: block;
+	}
+	.features {
+		height: 900px;
+	}
+	.features_p {
+		font-size: 25px;
+		margin-top: -10px;
+	}
+	.features__number {
+		margin-top: 0px;
+		margin-bottom: 30px;
+	}
+
 }
