@@ -16,11 +16,12 @@
 		<title>BoostFolia</title>
 	</head>
 	<body>
+		<script src="script.js" defer></script>
 		<div class="top">
 			<div class="menu_bar">
 				<div class="menu__container">
 					<img id="logo" src="pictures/Logo.png" alt="">
-					<img id="burger_menu" src="pictures/BurgerMenu.png" alt="" width="35px" height="26px">
+					<img onclick="menu()" id="burger_menu" src="pictures/BurgerMenu.png" alt="" width="35px" height="26px">
 				</div>
 			</div>
 			<div class="top_info">
@@ -30,9 +31,9 @@
 		</div>
 		<div class="about">
 			<div class="about__title">
-				<h2>about us</h2>
-				<div class="about__line"></div>
-				<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque dolorem consequatur, commodi expedita, <br>quibusdam, error voluptas voluptatibus fugit nobis voluptate blanditiis! Tempore, quia!</p>
+				<h2 class="title">about us</h2>
+				<div class="line"></div>
+				<p class="text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque dolorem consequatur, commodi expedita, <br>quibusdam, error voluptas voluptatibus fugit nobis voluptate blanditiis! Tempore, quia!</p>
 			</div>
 			<div class="about__container">
 				<div class="about__section">
@@ -108,6 +109,160 @@
 					<p class="features_p">Clienrs Worldwide</p>
 					<p class="features__number">100+</p>
 				</div>
+			</div>
+		</div>
+		<div class="skills">
+			<div class="skills__title">
+				<h2 class="title">Who we are</h2>
+				<div class="line"></div>
+				<p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, Lorem ipsum dolor sit amet. perspiciatis!</p>
+			</div>
+			<div class="skills__slider">
+				<a class="previous" onclick="previousSlide()"><img src="pictures/back_arrow.png" alt=""></a>
+				<div class="skills__item">
+					<div class="skills__container">
+						<div class="person">
+							<img src="pictures/programmer.png" alt="">
+							<h2 class="person_name">steve grew</h2>
+							<p class="person_job">developer</p>
+							<div class="person_social">
+								<img  onclick="social()" src="pictures/be.png" alt="">
+								<img onclick="social()" src="pictures/twitter.png" alt="">
+								<img onclick="social()" src="pictures/facebook.png" alt="">
+							</div>
+						</div>
+						<div class="person_skills">
+							<h2>my skills</h2>
+							<p class="skills__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero itaque id, esse et explicabo provident sapiente atque aliquam nemo facilis.</p>
+							<div class="statistic__container">
+									<div class="programs">
+										<p>html</p>
+										<p>css</p>
+										<p>js</p>
+										<p>php</p>
+									</div>
+									<div class="statistic_bar">
+										<div class="statistic" class="photoshop_bar">
+											<span style="width: 98%"></span>
+										</div>
+										<div class="statistic" class="illustrator_bar">
+											<span style="width: 97%"></span>
+										</div>
+										<div class="statistic" class="sketch_bar">
+											<span style="width: 95%"></span>
+										</div>
+										<div class="statistic" class="effects_bar">
+											<span style="width: 92%"></span>
+										</div>
+									</div>
+									<div class="statistic_procent">
+										<p>98%</p>
+										<p>97%</p>
+										<p>95%</p>
+										<p>92%</p>
+									</div>
+								</div>
+								
+						</div>
+					</div>
+					
+				</div>
+				<div class="skills__item">
+					<div class="skills__container">
+						<div class="person">
+							<img src="pictures/designer.png" alt="">
+							<h2 class="person_name">jane smith</h2>
+							<p class="person_job">designer</p>
+							<div class="person_social">
+								<img onclick="social()" src="pictures/be.png" alt="">
+								<img onclick="social()" src="pictures/twitter.png" alt="">
+								<img onclick="social()" src="pictures/facebook.png" alt="">
+							</div>
+						</div>
+						<div class="person_skills">
+							<h2>my skills</h2>
+							<p class="skills__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet tempora maiores exercitationem. Sequi nemo quia, quo minima, consequatur enim. Fuga, minus.</p>
+							<div class="statistic__container" class="designer_statistic">
+								<div class="programs">
+									<p>photoshop</p>
+									<p>illustrator</p>
+									<p>sketch</p>
+									<p>after effects</p>
+								</div>
+								<div class="statistic_bar">
+									<div class="statistic" class="photoshop_bar">
+										<span style="width: 88%"></span>
+									</div>
+									<div class="statistic" class="illustrator_bar">
+										<span style="width: 92%"></span>
+									</div>
+									<div class="statistic" class="sketch_bar">
+										<span style="width: 90%"></span>
+									</div>
+									<div class="statistic" class="effects_bar">
+										<span style="width: 98%"></span>
+									</div>
+								</div>
+								<div class="statistic_procent">
+									<p>88%</p>
+									<p>92%</p>
+									<p>90%</p>
+									<p>98%</p>
+								</div>
+							</div>	
+						
+						</div>
+					</div>
+					
+				</div>
+				<div class="skills__item">
+					<div class="skills__container">
+						<div class="person">
+							<img src="pictures/manager.png" alt="">
+							<h2 class="person_name">lora sure</h2>
+							<p class="person_job">manager</p>
+							<div class="person_social">
+								<img onclick="social()" src="pictures/be.png" alt="">
+								<img onclick="social()" src="pictures/twitter.png" alt="">
+								<img onclick="social()" src="pictures/facebook.png" alt="">
+							</div>
+						</div>
+						<div class="person_skills">
+							<h2>my skills</h2>
+							<p class="skills__text">Lorem sit consectetur adipisicing elit. Suscipit, nulla, quibusdam qui perspiciatis eligendi ut? Architecto, temporibus magnam error laborum tempora quis!</p>
+							<div class="statistic__container" class="manager_statistic">
+								<div class="programs">
+									<p>to do</p>
+									<p>excel</p>
+									<p>sketch</p>
+									<p>evernote</p>
+								</div>
+								<div class="statistic_bar">
+									<div class="statistic" class="photoshop_bar">
+										<span style="width: 90%"></span>
+									</div>
+									<div class="statistic" class="illustrator_bar">
+										<span style="width: 95%"></span>
+									</div>
+									<div class="statistic" class="sketch_bar">
+										<span style="width: 89%"></span>
+									</div>
+									<div class="statistic" class="effects_bar">
+										<span style="width: 97%"></span>
+									</div>
+								</div>
+								<div class="statistic_procent">
+									<p>90%</p>
+									<p>95%</p>
+									<p>89%</p>
+									<p>97%</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+				<a class="next" onclick="nextSlide()"><img src="pictures/arrow.png" alt=""></a>
 			</div>
 		</div>
 	</body>
