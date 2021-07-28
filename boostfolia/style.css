@@ -310,7 +310,6 @@ li {
 .skills__container {
 	display: flex;
 	justify-content: space-between;
-
 }
 .person {
 	width: 320px;
@@ -349,6 +348,7 @@ li {
 	width: 661px;
 	height: 436px;
 	background-color: #ebebeb;	
+	margin-bottom: 10px;
 }
 .person_skills h2 {
 	padding-top: 123px;
@@ -479,6 +479,9 @@ li {
 	.previous {
 		margin-top: 100px;
 	}
+	.skills {
+		height: 1000px;
+	}
 }
 @media (max-width: 800px) {
 	.skills__item {
@@ -517,6 +520,9 @@ li {
 	}
 	.statistic_bar {
 		width: 200px;
+	}
+	.skills {
+		height: 950px;
 	}
 }
 @media (max-width: 600px) {
@@ -561,7 +567,9 @@ li {
 	.statistic_bar {
 		width: 100px;
 	}
-	
+	.skills {
+		height: 950px
+	}
 }
 @media (max-width: 420px) {
 	
@@ -600,6 +608,12 @@ li {
 		
 	}
 	.statistic__container {
-		width: 300px
+		width: 300px;
+	}
+	.person_skills {
+		height: 290px;
+	}
+	.skills {
+		height: 850px
 	}
 }
