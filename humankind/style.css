@@ -1,0 +1,178 @@
+body {
+	
+	padding: 0px;
+	margin: 0px;
+}
+header {
+	height: 939px;
+	width: 100%;
+	overflow: hidden;
+}
+.nav {
+	
+	height: 57px;
+	display: flex;
+	justify-content: space-between;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.top_item ul {
+	display: flex;
+}
+.top_item li {
+	list-style: none;
+}
+.top_item a {
+	text-decoration: none;
+	color: #006450;
+	padding-right: 20px;
+	font-family: Roboto;
+	font-size: 17px;
+	line-height: 28px;
+	transition: 0.5s ease-in;
+}
+.top_item a:hover {
+	color: #FF3F00;
+	text-shadow: grey 1px 0 10px;
+}
+.top {
+	width: 100%;
+	height: 882px;
+	background-image: url(pictures/header.jpg);
+	background-position: top;
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+.top__container {
+	display: flex;
+	justify-content: space-between;
+	margin: 0px 25px 0px 25px;
+	padding-top: 170px;
+}
+.top__container p {
+	margin-top: -10px;
+	font-family: Roboto;
+	font-size: 36px;
+	color: #FFFAEF;
+}
+.top__container button {
+	width: 200px;
+	height: 64px;
+	background-color: #E1FF32;
+	font-family: Roboto;
+	font-size: 18px;
+	text-align: center;
+	border: 0px;
+	transition: .3s ease-in;
+}
+.top__container button:hover {
+	background-color: #FFAA4C;
+	color: #fff;
+}
+/* header adaptive */
+@media (max-width: 1400px) {
+	header {
+		height: 600px;
+	}
+}
+/* products */
+
+.products {
+	width: 100%;
+	height: 1750px;
+}
+.products__title {
+	height: 348px;
+	width: 100%;
+}
+.products__line {
+	width: 95%;
+	height: 2px;
+	background: #006450;
+	margin: 23px auto;
+}
+.products__text {
+	width: 583px;
+	margin: 84px auto;
+}
+.products__text p {
+	font-family: Roboto;
+	font-size: 36px;
+	text-align: center;
+	color: #006450;
+}
+.products__container {
+	width: 1391px;
+	margin: 25px auto;
+	display: none;
+	grid-template-areas: 
+    	"shower summer"
+    	"dental hair";
+    grid-template-columns: 683px 683px;
+    grid-template-rows: 683px 683px;
+    grid-gap: 25px;
+}
+.shower {
+	position:relative;
+	grid-area: shower;
+	background-image: url(pictures/shower.jpg);
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+.summer {
+	position:relative;
+	background-image: url(pictures/summer.jpg);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	grid-area: summer;
+}
+.dental {
+	position:relative;
+	background-image: url(pictures/dental.jpg);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	grid-area: dental;
+}
+.hair {
+	position:relative;
+	grid-area: hair;
+	background-image: url(pictures/hair.jpg);
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+
+.p_h {
+	font-family: Roboto;
+	font-size: 36px;
+	color: #FFFAEF;
+	text-align: center;
+	font-weight: 300;
+}
+.p_p {
+	padding-left: 146px;
+	padding-right: 146px;
+	font-family: Roboto;
+	font-size: 24px;
+	font-weight: 400;
+	text-align: center;
+	color: #FFFAEF;
+}
+.p_b {
+	position:absolute;
+	bottom:0;
+	font-family: Roboto;
+	font-size: 24px;
+	text-align: center;
+	color: #3E3935;
+	background-color: #E1FF32;
+	width: 100%;
+	height: 60px;
+	border: 0px;
+	display: table-cell;
+	vertical-align: bottom;
+	transition: .3s ease-in;
+}
+.p_b:hover {
+	color: #fff;
+	background-color: #FFAA4C;
+}
