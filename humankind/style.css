@@ -72,6 +72,11 @@ header {
 /* header adaptive */
 @media (max-width: 1400px) {
 	header {
+		height: 800px;
+	}
+}
+@media (max-width: 1200px) {
+	header {
 		height: 600px;
 	}
 }
@@ -104,7 +109,7 @@ header {
 .products__container {
 	width: 1391px;
 	margin: 25px auto;
-	display: none;
+	display: grid;
 	grid-template-areas: 
     	"shower summer"
     	"dental hair";
@@ -175,4 +180,33 @@ header {
 .p_b:hover {
 	color: #fff;
 	background-color: #FFAA4C;
+}
+/* products adaptive */
+@media (max-width: 1400px) {
+	.products {
+		height: 1050px;
+	}
+	.products__container {
+		width: 810px;
+    	grid-template-columns: 400px 400px;
+    	grid-template-rows: 400px 400px;
+    	grid-gap: 10px;	
+	} 
+		.p_h {
+		font-size: 33px;
+		margin-top: 20px;
+		margin-bottom: 0px;
+	}
+	.p_p {
+		margin-top: 5px;
+		padding-left: 20px;
+		padding-right: 20px;
+		font-size: 20px;
+	}
+}
+@media (max-width: 1200px) {
+	.products__text {
+		margin-top: 25px;
+		margin-bottom: 10px;
+	}
 }
