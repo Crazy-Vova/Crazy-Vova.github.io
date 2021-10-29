@@ -37,6 +37,7 @@ header {
     font-size: 15px;
     font-weight: 500;
     transition: .3s ease-in-out;
+    color: black;
 }
 .nav a:hover {
     color: #0082F3;
@@ -342,6 +343,10 @@ footer {
     }
     .save {
         height: 480px;
+    }
+    .save_content {
+        padding-left: 10px;
+        padding-right: 10px;
     }
     .nav li {
         padding-left: 10px;
