@@ -399,7 +399,7 @@ footer a:hover{
 	  color: #333;
 	  font-family: 'Roboto', sans-serif;
 	  font-size: 20px;
-	  font-weight: 600;
+	  font-weight: 400;
 	  text-decoration: none;
 	}
 	.menu__item:hover {
@@ -483,7 +483,7 @@ footer a:hover{
 }
 @media (max-width: 600px){
 	.appstore {
-		width: 15%;
+		width: 25%;
 	}
 	.interesting h2 {
 		font-size: 20px;
