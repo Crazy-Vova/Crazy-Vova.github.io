@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html scroll-behavior="smooth">
+<head scroll-behavior: smooth>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    
+</head>
+<body>
+    <script src="script.js" defer></script>
+    <header id="header">
+        <div class="nav">
+            <img src="pictures/ava.jpg" alt="">
+            <div class="nav_list">
+                <ul>
+                    <li><a href="#about_se">ОБО МНЕ</a></li>
+                    <li class="work_btn"><a href="#work_sec">РАБОТЫ</a></li>
+                    <li class="contacts_btn"><a href="#contacts_sec">КОНТАКТЫ</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="header_title">
+            Crazy Vova  
+        </div>
+    </header>
+    <div id="about_se" class="info">
+        <h2>Владимир Черныш</h2>
+        <div class="info_line"></div>
+        <div class="info_text">
+            <p>Я - верстальщик и начинающий фрилансер. Сверстаю для Вас сайт, соблюдая сроки и любые правки. Всегда на связи. Кроссбраузерность, надежность и адаптивность верстки - это те необходимые вещи, которые обязательно выполняются мной при верстке макета.</p>
+        </div>
+    </div>
+    <div class="space"></div>
+    <div id="work_sec" class="works">
+        <h2>Мои Работы</h2>
+        <div class="works_line"></div>
+        <div class="info_text">
+            <p>На любую из них вы можете перейти и посмотреть.</p>
+        </div>
+        <div class="works_container">
+            <div class="project" id="first_project" onclick="location.href='https://ru.stackoverflow.com';">
+                <p>Dwel Blog</p>
+            </div>
+            <div class="project" onclick="location.href='https://ru.stackoverflow.com';">
+                <p>название сайта</p>
+            </div>
+            <div class="project" onclick="location.href='https://ru.stackoverflow.com';">
+                <p>название сайта</p>
+            </div>
+            <div class="project" onclick="location.href='https://ru.stackoverflow.com';">
+                <p>название сайта</p>
+            </div>
+        </div>
+    </div>
+    <div class="second_space"></div>
+    <div class="contacts" id="contacts_sec">
+        <h2>Контакты</h2>
+        <div class="works_line"></div>
+        <div class="info_text">
+            <p>Всегда на связи</p>
+        </div>
+        <div class="contacts_container">
+            <div class="contact">
+                <img class="service" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Telegram_2019_Logo.svg/1200px-Telegram_2019_Logo.svg.png" alt="">
+                <p><a href="https://t.me/crazy_vova">https://t.me/crazy_vova</a></p>
+            </div>
+            <div class="contact">
+                <img class="service" src="http://web.kpi.kharkov.ua/dpm/wp-content/uploads/sites/123/2015/03/email-1.png" alt="">
+                <p>vova-chernysh@ukr.net</p>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
