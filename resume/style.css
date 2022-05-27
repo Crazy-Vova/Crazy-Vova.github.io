@@ -144,6 +144,11 @@ header {
     font-size: 30px;
     padding-top: 99px;
 }
+#project1 {
+    background-image: url(pictures/video.jpg);
+    background-position: -100px -100px;
+    background-size: 200%;
+}
 /*second space*/
 .second_space {
     width: 100%;
@@ -373,5 +378,10 @@ https://storge.pic2.me/cm/2560x2048/312/57d92f3657b3a.jpg
     }
     .contact p {
         font-size: 15px;
+    }
+}
+@media (max-width: 500px) {
+    #project1 {
+        background-position: 0px 0px;
     }
 }
