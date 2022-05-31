@@ -411,6 +411,10 @@ header a:hover {
     }
 }
 @media (max-width: 425px) {
+    .episodes_img_c {
+        width: 100%;
+    }
+    
     .item_title {
         font-size: 25px;
     }
@@ -418,11 +422,11 @@ header a:hover {
         margin-top: 20px;
     }
     .episodes_img_c {
-        height: 100px;
+        height: 200px;
     }
     .episodes_img {
         margin-top: -100px;
-        width: 300px;
+        width: 400px;
     }
     .episodes_img:last-child {
         margin-top: -150px;
@@ -431,7 +435,10 @@ header a:hover {
         font-size: 17px;
     }
     .episodes_item {
-        padding: 0px 20px 20px 20px;
+        padding: 0px 0px 20px 0px;
+    }
+    .item_content {
+        padding: 0px 20px 0px 20px;
     }
 }
 
@@ -573,5 +580,112 @@ header a:hover {
     }
     .jacob_info a {
         padding: 0px;
+    }
+}
+
+/* email */
+
+.email {
+    border-radius: 32px;
+    background-color: black;
+    margin-top: 200px;
+    padding: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+.email_info a {
+    color: #118DA8;
+    text-decoration: none;
+    font-size: 18px;
+}
+.email_info p {
+    font-size: 72px;
+}
+.email_input input {
+    display: block;
+}
+
+.input_text {
+    margin-bottom: 20px;
+    width: 522px;
+    height: 82px;
+    background-color: #191919;
+    border: 0px;
+    border-radius: 6px;
+    padding-left: 19px;
+    font-size: 24px;
+    color: white
+}
+.email_button {
+    width: 87px;
+    height: 48px;
+    background-color: #118DA8;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 15px;
+    transition: .5s ease-in-out;
+}
+.email_button:hover {
+    box-shadow: 5px 5px 0px white;
+}
+@media (max-width: 1300px) {
+    .email_info p {
+        font-size: 60px;
+        margin-top: 20px;
+    }
+    .input_text {
+        width: 450px;
+    }
+}
+@media (max-width: 1150px) {
+    .email_info p {
+        font-size: 55px;
+        margin-top: 10px;
+    }
+    .input_text {
+        width: 350px;
+        height: 60px;
+    }
+}
+@media (max-width: 1000px) {
+    .email_info p {
+        font-size: 45px;
+        margin-top: 20px;
+    }
+    .input_text {
+        width: 260px;
+        height: 55px;
+    }
+}
+@media (max-width: 850px) {
+    .email {
+        display: block;
+        margin-top: 80px;
+    }
+    .email_info {
+        margin-bottom: 30px;
+    }
+}
+@media (max-width: 550px) {
+    .email_info p {
+        font-size: 40px;
+    }
+    .input_text {
+        width: 240px;
+    }
+}
+@media (max-width: 425px) {
+    .email {
+        padding: 40px 40px 40px 40px;
+    }
+    .input_text {
+        width: calc(100% - 10px);
+        padding-left: 10px;
+    }
+    .email_info p {
+        font-size: 30px
+    }
+    .input_text {
+        font-size: 18px;
     }
 }
