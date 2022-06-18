@@ -1,9 +1,5 @@
 "use strict";
 
-let userColour = "blue";
-
-let user = 'Вася'
-let userName 
-
-userName = user
-console.log(userName)
+function install() {
+    confirm('Ви дійсно бажаєте завантажити додаток?')
+}

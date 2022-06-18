@@ -347,10 +347,12 @@ footer {
     }
     .footer__img img {
         margin: 0px auto;
+        margin-bottom: -5px;
     }
     .footer__img {
         height: 100%;  
-        padding: 0px; 
+        padding: 0px;
+        overflow: hidden; 
     }
 }
 @media (max-width: 768px) {
