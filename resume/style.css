@@ -2,18 +2,22 @@ body {
     margin: 0px;
     padding: 0px;
 }
+
 .nav_list a {
     text-decoration: none;
     color: white;
 }
+
 header {
     width: 100%;
     height: 700px;
-    background-image: url(https://img4.goodfon.com/original/1920x1080/2/61/vecher-firewatch-campo-santo-kholmy-vid-les-igra-peizazh-gor.jpg); /* pictures/background.jpg */ 
+    background-image: url(pictures/background.jpg);
+    /* background-image: url(https://img4.goodfon.com/original/1920x1080/2/61/vecher-firewatch-campo-santo-kholmy-vid-les-igra-peizazh-gor.jpg);  pictures/background.jpg */
     background-size: 1550px;
     background-position: 0px -50px;
     background-attachment: fixed;
-}   
+}
+
 .nav {
     width: 90%;
     margin: 0px auto;
@@ -21,18 +25,22 @@ header {
     padding-top: 20px;
     justify-content: space-between;
 }
+
 .nav img {
     cursor: pointer;
     width: 50px;
     height: 50px;
     border-radius: 50%;
 }
+
 .nav_list {
     margin-top: -3px;
 }
+
 .nav_list ul {
     display: flex;
 }
+
 .nav_list li {
     list-style: none;
     font-family: 'Roboto', sans-serif;
@@ -43,15 +51,19 @@ header {
     transition: .3s ease-in-out;
     padding-right: 20px;
 }
+
 .nav_list a {
     transition: .3s ease-in-out;
 }
+
 .nav_list li:last-child {
     padding-right: 0px;
 }
+
 .nav_list a:hover {
     color: #889EAF;
 }
+
 .header_title {
     margin-top: 150px;
     text-align: center;
@@ -60,22 +72,26 @@ header {
     font-family: 'Comfortaa', cursive;
     /* font-family: 'Varela Round', sans-serif; */
 }
+
 /* info */
 .info {
     height: 270px;
 }
+
 .info h2 {
     padding-top: 20px;
     text-align: center;
     font-size: 45px;
     font-family: 'Comfortaa', cursive;
 }
+
 .info_line {
     width: 100px;
     height: 2px;
     background-color: rgb(134, 133, 133);
     margin: -20px auto;
 }
+
 .info_text {
     width: 1000px;
     margin: auto;
@@ -84,9 +100,11 @@ header {
     font-size: 23px;
     font-family: 'Roboto', sans-serif;
 }
+
 .info_text p {
     color: #5E454B;
 }
+
 /* space */
 .space {
     width: 100%;
@@ -103,6 +121,7 @@ header {
     width: 100%;
     min-height: 600px;
 }
+
 .works h2 {
     text-align: center;
     padding-top: 20px;
@@ -110,12 +129,14 @@ header {
     font-size: 45px;
     font-family: 'Comfortaa', cursive;
 }
+
 .works_line {
     width: 100px;
     height: 3px;
     background-color: rgb(134, 133, 133);
     margin: -20px auto;
 }
+
 .works_container {
     width: 80%;
     min-height: 400px;
@@ -124,6 +145,7 @@ header {
     flex-wrap: wrap;
     justify-content: space-around;
 }
+
 .project {
     cursor: pointer;
     width: 500px;
@@ -134,9 +156,11 @@ header {
     background-color: gray;
     transition: .3s ease-in-out;
 }
+
 .project:hover {
     background-color: darkgray;
 }
+
 .project p {
     color: white;
     font-family: 'Roboto', sans-serif;
@@ -144,11 +168,13 @@ header {
     font-size: 30px;
     padding-top: 99px;
 }
+
 #project1 {
     background-image: url(pictures/video.jpg);
     background-position: -100px -100px;
     background-size: 200%;
 }
+
 /*second space*/
 .second_space {
     width: 100%;
@@ -167,6 +193,7 @@ https://storge.pic2.me/cm/2560x2048/312/57d92f3657b3a.jpg
 .contacts {
     height: 400px;
 }
+
 .contacts_container {
     width: 600px;
     height: 200px;
@@ -174,11 +201,13 @@ https://storge.pic2.me/cm/2560x2048/312/57d92f3657b3a.jpg
     display: flex;
     justify-content: space-between;
 }
+
 .contact {
     text-align: center;
     width: 250px;
     height: 200px;
 }
+
 .contacts h2 {
     text-align: center;
     padding-top: 10px;
@@ -186,200 +215,253 @@ https://storge.pic2.me/cm/2560x2048/312/57d92f3657b3a.jpg
     font-size: 45px;
     font-family: 'Comfortaa', cursive;
 }
+
 .contact img {
     width: 100px;
     height: 100px;
     border-radius: 50%;
     margin-top: 20px;
 }
+
 .contact p {
     font-size: 20px;
     font-family: 'Comfortaa', cursive;
-    
+
 }
+
 /* адаптив */
 @media (max-width: 1200px) {
     .second_space {
         height: 300px;
         background-position: 0px -80px;
     }
+
     .space {
         height: 200px;
         background-size: 150%;
     }
+
     header {
         height: 600px;
         background-position: 0px 0px;
         background-size: 110%;
     }
 }
+
 @media (max-width: 1000px) {
     header {
         height: 500px;
         background-size: 100%;
     }
+
     .header_title {
         margin-top: 120px;
         font-size: 70px;
     }
+
     .info h2 {
         padding-top: 0px;
     }
+
     .info_text {
         width: 700px;
     }
+
     .space {
         background-position: 0px -1000px;
         background-size: 180%;
     }
+
     .works h2 {
         margin-top: 10px;
     }
+
     .works_line {
         margin-top: -30px;
     }
+
     .works_container {
         margin-top: 40px;
     }
+
     .contacts {
         height: 300px;
     }
+
     .contacts h2 {
         margin-top: 20px;
     }
 }
+
 @media (max-width: 890px) {
     header {
         height: 400px;
         background-size: 1000px;
         background-position: -110px -70px;
     }
+
     .header_title {
         margin-top: 80px;
         font-size: 70px;
     }
+
     .info h2 {
         padding-top: 0px;
     }
+
     .info_text {
         max-width: 700px;
     }
+
     .space {
         background-attachment: scroll;
         background-position: 0px -100px;
         background-size: 100%;
     }
+
     .second_space {
         background-attachment: scroll;
     }
 }
+
 @media (max-width: 705px) {
     .info {
         height: 300px;
     }
+
     .info_text {
         width: 500px;
     }
+
     .info h2 {
         font-size: 37px;
     }
+
     .info_line {
         margin-bottom: -10px;
     }
+
     .info p {
         margin-top: 0px;
         font-size: 24px;
     }
+
     .space {
         height: 100px;
     }
+
     .second_space {
         height: 100px;
         background-position: 0px -200px;
     }
 }
+
 @media (max-width: 600px) {
     .nav_list li {
         font-size: 14px;
         padding-top: 2px;
     }
+
     .nav {
         justify-content: space-evenly;
     }
+
     .header_title {
         font-size: 40px;
     }
+
     header {
         background-position: -200px -100px;
     }
+
     .info_text {
         width: 300px;
     }
+
     .contacts_container {
         margin: auto;
         width: 300px;
         flex-wrap: wrap;
     }
+
     .info h2 {
         font-size: 25px;
     }
+
     .info_line {
         margin-top: -15px;
     }
+
     .info_text p {
         padding-top: 10px;
         font-size: 18px;
     }
+
     .info {
         height: 280px;
     }
+
     .space {
         background-position: 0px -50px;
     }
+
     .works {
         height: 1450px;
     }
+
     .works h2 {
         font-size: 25px;
     }
+
     .works_line {
         margin-top: -15px;
     }
+
     .works p {
         padding-top: 0px;
         font-size: 18px;
     }
+
     .project p {
         padding-top: 120px;
     }
+
     .second_space {
         background-position: 0px -100px;
     }
+
     .contacts h2 {
         font-size: 25px;
     }
+
     .contacts_line {
         margin-top: -15px;
     }
+
     .contacts p {
         padding-top: 0px;
         font-size: 18px;
     }
+
     .contacts_container {
         display: block;
     }
+
     .contact img {
         height: 50px;
         width: 50px;
     }
+
     .contact {
         margin: auto;
         height: 170px;
     }
+
     .contact p {
         font-size: 15px;
     }
 }
+
 @media (max-width: 500px) {
     #project1 {
         background-position: 0px 0px;
