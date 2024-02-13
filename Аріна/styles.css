@@ -1,0 +1,113 @@
+body {
+    position: relative;
+    width: 700px;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'PT Sans Caption', sans-serif;
+    background-color: #E78895;
+    box-sizing: border-box;
+}
+
+p {
+    margin: 0px;
+    color: white;
+}
+
+.intro__container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+img {
+    width: 100%;
+    display: block;
+    padding: 0px;
+    margin: 0px;
+}
+
+.box_data {
+    font-size: 65px;
+    width: 400px;
+    background-color: black;
+    height: 470px;
+    border-radius: 10px;
+    padding: 30px 0px 0px 60px;
+}
+
+/* player  background-color: #944E63; */
+
+
+.music {
+    position: relative;
+}
+
+/*
+.slide {
+    text-align: center;
+    padding: 30px;
+    margin: 30px auto;
+    border-radius: 10px;
+    background-color: black;
+    width: 350px;
+    opacity: 0;
+}
+.slide.active {
+    opacity: 1;
+}
+*/
+
+
+
+
+.slide {
+    display: none;
+    /* начально скрываем все слайды */
+    text-align: center;
+    padding: 30px;
+    margin: 30px auto;
+    border-radius: 10px;
+    background-color: black;
+    width: 350px;
+}
+
+.slide.active {
+    display: block;
+    /* показываем активный слайд */
+    opacity: 1;
+}
+
+/* ваш остальной CSS остается без изменений */
+
+
+
+.slide p {
+    padding-top: 10px;
+    font-size: 20px;
+}
+
+.slide audio {
+    width: 270px;
+    position: relative;
+}
+
+.controls {
+    width: 35px;
+    position: absolute;
+    top: 30px;
+}
+
+.prev {
+    left: 160px;
+    transform: rotate(180deg);
+    top: 26px;
+}
+
+.next {
+    right: 160px;
+}
+
+
+
+
