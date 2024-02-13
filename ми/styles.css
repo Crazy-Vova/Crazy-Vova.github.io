@@ -1,0 +1,211 @@
+body {
+    position: relative;
+    width: 700px;
+    padding: 0px;
+    margin: 0px auto;
+    font-family: 'PT Sans Caption', sans-serif;
+    background-color: #944E63;
+    box-sizing: border-box;
+}
+
+/* background-color: #E78895; */
+p {
+    margin: 0px;
+    color: white;
+}
+
+.intro__container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+img {
+    width: 100%;
+    display: block;
+    padding: 0px;
+    margin: 0px;
+}
+
+.box_data {
+    font-size: 65px;
+    width: 400px;
+    background-color: black;
+    height: 470px;
+    border-radius: 10px;
+    padding: 30px 0px 0px 60px;
+}
+
+/* player  background-color: #944E63; */
+
+/* slider */
+
+.skills__item {
+    text-align: center;
+    padding: 30px;
+    margin: 30px auto;
+    border-radius: 10px;
+    background-color: black;
+    width: 350px;
+    transition: all ease 1s;
+}
+
+.skills__item p {
+    padding-top: 10px;
+    font-size: 20px;
+}
+
+.skills__item audio {
+    width: 270px;
+    position: relative;
+}
+
+
+
+.skills__slider {
+    position: relative;
+
+    margin: auto;
+}
+
+.next {
+    width: 40px;
+    transition: .3s ease-in-out;
+    position: absolute;
+    top: 25px;
+    right: 160px;
+}
+
+.next img {
+    width: 100%;
+}
+
+.previous img {
+    width: 100%;
+}
+
+.previous {
+    position: absolute;
+    left: 160px;
+    top: 25px;
+    width: 40px;
+    transition: .3s ease-in-out;
+}
+
+
+@media (max-width: 600px) {
+
+    body {
+        width: 100%;
+    }
+
+    .box_data {
+        width: 100%;
+        box-sizing: border-box;
+        border-radius: 0px;
+    }
+
+    .intro__container {
+        width: 100%;
+        margin: 0px;
+        margin-top: 30px;
+    }
+
+    .data__container {
+        width: 100%;
+    }
+
+    .previous {
+        left: 16%;
+    }
+
+    .next {
+        right: 16%;
+    }
+}
+
+@media (max-width: 520px) {
+    .previous {
+        left: 12%;
+    }
+
+    .next {
+        right: 12%;
+    }
+}
+
+@media (max-width: 470px) {
+
+
+    .previous {
+        width: 30px;
+        top: 33px;
+    }
+
+    .next {
+        width: 30px;
+        top: 33px;
+    }
+}
+
+@media (max-width: 440px) {
+    .previous {
+        left: 20px;
+    }
+
+    .next {
+        right: 20px;
+    }
+
+    .box_data {
+        padding-left: 30px;
+    }
+
+
+    .skills__item {
+        width: 100%;
+        box-sizing: border-box;
+        border-radius: 0px;
+    }
+}
+
+@media (max-width: 400px) {
+    .box_data p {
+        font-size: 55px;
+    }
+
+    .box_data {
+        padding-left: 10%;
+    }
+
+    .skills__item audio {
+        width: 250px;
+    }
+
+    .previous {
+        width: 30px;
+    }
+
+    .next {
+        width: 30px;
+    }
+}
+
+@media (max-width: 350px) {
+    .box_data {
+        padding-left: 5%;
+    }
+
+    .skills__item audio {
+        width: 220px;
+    }
+
+    .previous {
+        left: 5%;
+    }
+
+    .next {
+        right: 5%;
+    }
+}
