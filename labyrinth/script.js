@@ -420,7 +420,7 @@ playAgainBtn.addEventListener("click", () => {
 // adaptive
 
 function scaleCont() {
-    const baseWidth = 700;
+    const baseWidth = 650;
 
     const scale = Math.min(
         window.innerWidth / baseWidth,

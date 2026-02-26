@@ -116,5 +116,6 @@ canvas {
 .container {
     margin: 0px auto;
     width: 700px;
-    transform-origin: top center;
+    height: 700px;
+    transform-origin: center center;
 }
