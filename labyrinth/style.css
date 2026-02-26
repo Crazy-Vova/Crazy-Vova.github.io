@@ -113,10 +113,8 @@ canvas {
 }
 
 /* adaptive */
-
-@media (max-width: 700px) {
-    .container {
-        width: 700px;
-        transform-origin: top center;
-    }
+.container {
+    margin: 0px auto;
+    width: 700px;
+    transform-origin: top center;
 }

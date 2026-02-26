@@ -421,8 +421,16 @@ playAgainBtn.addEventListener("click", () => {
 
 function scaleCont() {
     const baseWidth = 700;
-    const scale = Math.min(window.innerWidth / baseWidth, 1);
+
+    const scale = Math.min(
+        window.innerWidth / baseWidth,
+        window.innerHeight / baseWidth,
+        1
+    );
     document.querySelector(".container").style.transform = `scale(${scale})`;
 }
 window.addEventListener("resize", scaleCont);
-scaleCont();
+window.addEventListener("load", () => {
+    scaleCont();
+});
+setTimeout(scaleCont, 100);
