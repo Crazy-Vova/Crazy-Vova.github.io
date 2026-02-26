@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maze Game</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cascadia+Mono:ital,wght@0,200..700;1,200..700&display=swap" rel="stylesheet">
+    <link rel="icon" href="files/favicon.png" type="image/x-icon">
+</head>
+<body>
+    <div class="top-bar">
+        <div class="timer">Time: <span id="time">0.00</span></div>
+        <button id="resetBtn"><img src="files/reset.png" alt=""></button>
+    </div>
+    <div class="controls">
+        <button data-size="8">Small</button>
+        <button data-size="10">Medium</button>
+        <button data-size="13">Large</button>
+    </div>
+    <div class="game-container">
+        <canvas id="maze"></canvas>
+        <div class="hidden" id="winOverlay">
+            <div class="winBox">
+                <div id="finishOverlay"></div>
+                <button id="playAgain">Play Again</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

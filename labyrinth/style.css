@@ -1,0 +1,119 @@
+body {
+    background-color: #028b46;
+    margin: 0px;
+    text-align: center;
+    height: 100vh;
+    overflow-x: hidden;
+    font-family: "Cascadia Mono", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.top-bar {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    color: white;
+}
+
+canvas {
+    background: #318ae9;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#resetBtn {
+    background: none;
+    cursor: pointer;
+    border: 0px;
+    width: 50px;
+}
+#resetBtn img {
+    width: 100%;
+    height: auto;
+}
+.timer {
+    font-size: 20px;
+    padding-top: 10px;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: -10px;
+    margin-bottom: 20px;
+}
+.controls button {
+    width: 150px;
+    height: 40px;
+    background-color: #318ae9;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    transition: .4s ease-in;
+}
+.controls button:hover {
+    background-color: #1e5f9c;
+}
+.controls button.active {
+    background-color: #1e5f9c;
+}
+#finishOverlay {
+    height: 40px;
+    font-size: 20px;
+    transition: .5s ease;
+}
+
+#finishOverlay {
+    color: white;
+}
+#winOverlay {
+    position: absolute;
+    top: 0;
+    left: calc(50% - 280px);
+    width: 560px;
+    height: 560px;
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+.hidden {
+    visibility: hidden;
+}
+.winBox {
+    background-color: #1e5f9c;
+    height: 100px;
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+}
+.game-container {
+    position: relative;
+}
+.winBox button {
+    font-family: "Cascadia Mono", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 20px;
+    width: 150px;
+    height: 40px;
+    background-color: #318ae9;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+@media (max-width: 700px) {
+    body {
+        width: 700px;
+    }
+}
