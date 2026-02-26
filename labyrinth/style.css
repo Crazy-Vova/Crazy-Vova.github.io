@@ -112,8 +112,11 @@ canvas {
     cursor: pointer;
 }
 
+/* adaptive */
+
 @media (max-width: 700px) {
-    body {
+    .container {
         width: 700px;
+        transform-origin: top center;
     }
 }

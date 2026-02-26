@@ -416,3 +416,13 @@ playAgainBtn.addEventListener("click", () => {
     initMaze(rows);
     timerDisplay.textContent = "0.00";
 });
+
+// adaptive
+
+function scaleCont() {
+    const baseWidth = 700;
+    const scale = Math.min(window.innerWidth / baseWidth, 1);
+    document.querySelector(".container").style.transform = `scale(${scale})`;
+}
+window.addEventListener("resize", scaleCont);
+scaleCont();

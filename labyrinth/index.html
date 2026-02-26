@@ -11,24 +11,27 @@
     <link rel="icon" href="files/favicon.png" type="image/x-icon">
 </head>
 <body>
-    <div class="top-bar">
-        <div class="timer">Time: <span id="time">0.00</span></div>
-        <button id="resetBtn"><img src="files/reset.png" alt=""></button>
-    </div>
-    <div class="controls">
-        <button data-size="8">Small</button>
-        <button data-size="10">Medium</button>
-        <button data-size="13">Large</button>
-    </div>
-    <div class="game-container">
-        <canvas id="maze"></canvas>
-        <div class="hidden" id="winOverlay">
-            <div class="winBox">
-                <div id="finishOverlay"></div>
-                <button id="playAgain">Play Again</button>
+    <div class="container">
+        <div class="top-bar">
+            <div class="timer">Time: <span id="time">0.00</span></div>
+            <button id="resetBtn"><img src="files/reset.png" alt=""></button>
+        </div>
+        <div class="controls">
+            <button data-size="8">Small</button>
+            <button data-size="10">Medium</button>
+            <button data-size="13">Large</button>
+        </div>
+        <div class="game-container">
+            <canvas id="maze"></canvas>
+            <div class="hidden" id="winOverlay">
+                <div class="winBox">
+                    <div id="finishOverlay"></div>
+                    <button id="playAgain">Play Again</button>
+                </div>
             </div>
         </div>
     </div>
+    
     <script src="script.js"></script>
 </body>
 </html>
