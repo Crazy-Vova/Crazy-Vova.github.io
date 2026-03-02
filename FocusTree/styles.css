@@ -1,0 +1,120 @@
+body {
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-family: "Cascadia Mono", sans-serif;
+    font-weight: 400;
+}
+
+.slider-container {
+    width: 80%;
+    margin: 20px auto;
+}
+.slider-line {
+    position: relative;
+    height: 6px;
+    border-radius: 10px;
+}
+.slider-fill-left, .slider-fill-right {
+    position: absolute;
+    height: 100%;
+    background-color: #3b82f6;
+    width: 0;
+    transition: width 0.5s ease;
+}
+.slider-fill-right {
+    left: 50%;
+}
+.slider-fill-left {
+    right: 50%;
+}
+.slider-handle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 18px;
+    height: 18px;
+    background-color: white;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: opacity 0.5s ease;
+    touch-action: none;
+}
+
+.top-progress {
+    width: 80%;
+    height: 6px;
+    background: #1e293b;
+    margin: 20px auto;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.top-progress-fill {
+    height: 100%;
+    background: #3b82f6;
+    width: 100%;
+    transition: width 0.5s linear;
+}
+
+button {
+    width: 200px;
+    height: 40px;
+    background-color: #3b82f6;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+    font-family: "Cascadia Mono", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    transition: ease 0.3s;
+    transition: display 0.3s ease;
+}
+.hidden {
+    display: none;
+    pointer-events: none;
+}
+button:hover {
+    background-color: #1a4ab0;
+}
+#sessionMessage, #message {
+    font-size: 24px;
+    margin-top: 20px;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+h3 {
+    font-size: 40px;
+}
+
+@media (max-width: 700px) {
+    .controls {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    button {
+        margin: 10px auto;
+    }
+    h1 {
+        margin-bottom: 0px;
+        margin-top: 10px;
+        font-size: 25px;
+    }
+    .slider-container {
+        margin-top: 10px;
+    }
+    #message, #sessionMessage {
+        margin: 0px;
+        font-size: 18px;
+    }
+    video {
+        width: 250px;
+    }
+    h3 {
+        padding: 0px;
+        margin: 0px;
+        font-size: 26px;
+    }
+}
