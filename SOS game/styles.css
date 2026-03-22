@@ -66,6 +66,7 @@ header h2 {
     margin: 0px;
 }
 header button {
+    color: black;
     margin: 30px auto;
     width: 260px;
     height: 60px;
@@ -946,6 +947,8 @@ body{
   grid-column: span 2; 
 }
 
+/* Adaptive */
+
 @media (max-width: 1000px) {
     .system h3 {
         padding-top: 120px;
@@ -1009,7 +1012,7 @@ body{
     }
 }
 
-/* comments */
+/* Comments */
 
 .comments {
     padding: 100px 0px;
@@ -1046,6 +1049,7 @@ body{
     letter-spacing: 1px;
 }
 .comments__title button {
+    color: black;
     width: 260px;
     height: 60px;
     border: 0px;
@@ -1132,6 +1136,8 @@ body{
     position: absolute;
     bottom: 0px;
 }
+
+/* Adaptive */
 
 @media (max-width: 1100px) {
     .comments__content {
@@ -1300,18 +1306,7 @@ body{
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
+/* quotes */
 
 .newsletter {
     width: 90%;
@@ -1329,23 +1324,17 @@ body{
     justify-content: center;
     gap: 20px;
 }
-
-/* Стили изображения */
 .newsletter__image {
     flex: 1;
     text-align: center;
 }
-
 .newsletter__image img {
     width: 100%;
     height: auto;
 }
-
-/* Стили контента */
 .newsletter__content {
     flex: 1.5;
 }
-
 .newsletter__subtitle {
     font-family: Bebas Neue;
     font-weight: 400;
@@ -1355,7 +1344,6 @@ body{
     font-size: 20px;
     margin-bottom: 10px;
 }
-
 .newsletter h2 {
     margin: 0 0 25px 0;
     font-family: Bebas Neue;
@@ -1366,19 +1354,16 @@ body{
     text-transform: uppercase;
 
 }
-
 .newsletter__description {
     color: #a0a0a0;
     line-height: 1.6;
     margin-bottom: 40px;
     max-width: 500px;
 }
-
 .newsletter__form {
     display: flex;
     gap: 18px;
 }
-
 .input__group {
     box-sizing: border-box;
     height: 60px;
@@ -1387,14 +1372,12 @@ body{
     padding: 10px 15px;
     border-radius: 4px;
 }
-
 .input__group label {
     display: block;
     font-size: 0.7rem;
     color: #555;
     margin-bottom: 5px;
 }
-
 .input__group input {
     width: 100%;
     background: transparent;
@@ -1430,12 +1413,12 @@ body{
     
 
 }
-
 .subscribe__btn:hover {
     background-color: #8b5f19;
 }
 
-/* Адаптивность для мобилок */
+/* Adaptive */
+
 @media (max-width: 1200px) {
     .newsletter h2 {
         font-size: 60px;
@@ -1522,7 +1505,7 @@ body{
   --bg-color: #0a0a0a;
   --text-primary: #ffffff;
   --text-secondary: #888888;
-  --accent-color: #ff4500; /* Цвет для активной иконки YouTube */
+  --accent-color: #ff4500; 
 }
 
 .footer {
@@ -1547,7 +1530,7 @@ body{
 }
 
 .footer__logo {
-  height: 60px; /* Настройте под ваш логотип */
+  height: 60px; 
 }
 
 .footer__list {
@@ -1574,30 +1557,25 @@ body{
 .footer__link:hover {
   opacity: 0.7;
 }
-
 .footer__socials {
   display: flex;
   gap: 20px;
   align-items: center;
 }
-
 .footer__social-link {
   color: var(--text-primary);
   font-size: 18px;
   text-decoration: none;
   transition: transform 0.2s;
 }
-
 .footer__social-link--active {
-  color: #ff0000; /* Цвет YouTube */
+  color: #ff0000; 
 }
-
 .footer__divider {
   border: 0;
   border-top: 1px solid #333;
   margin: 20px 0;
 }
-
 .footer__bottom {
   display: flex;
   justify-content: space-between;
@@ -1605,22 +1583,20 @@ body{
   font-size: 11px;
   color: var(--text-secondary);
 }
-
 .footer__legal {
   display: flex;
   gap: 10px;
 }
-
 .footer__legal-link {
   color: var(--text-secondary);
   text-decoration: none;
 }
-
 .footer__legal-link:hover {
   color: var(--text-primary);
 }
 
-/* Адаптивность для мобилок */
+/* Adaptive */
+
 @media (max-width: 768px) {
   .footer__top, .footer__bottom {
     flex-direction: column;

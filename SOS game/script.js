@@ -2,6 +2,8 @@ function steam() {
   window.location.href = "https://store.steampowered.com/app/619080/SOS/";
 }
 
+// nav
+
 const navbar = document.querySelector('.nav__hidden');
 window.addEventListener('scroll', () => {
     if (window.scrollY > 500) {
@@ -11,6 +13,7 @@ window.addEventListener('scroll', () => {
     }
 });
 
+// translate
 
 function googleTranslateElementInit() {
   new google.translate.TranslateElement(
@@ -57,6 +60,8 @@ function translatePage(lang) {
   }, 300);
 
 }
+
+// language list
 
 document.addEventListener("click", function(e){
 
@@ -120,13 +125,14 @@ navLinks.forEach(link => {
     });
 });
 */
+
+// burger menu
+
 const burgers = document.querySelectorAll('.burger');
 const menu = document.querySelector('.burger__nav');
 const navLinks = document.querySelectorAll('.burger__nav a');
 
-// Функция для управления скроллом
 function toggleScroll() {
-    // Если меню активно, запрещаем скролл, иначе — разрешаем
     if (menu.classList.contains('active')) {
         document.body.style.overflow = 'hidden';
         document.documentElement.style.overflow = 'hidden';
@@ -136,25 +142,23 @@ function toggleScroll() {
     }
 }
 
-// Клик по бургеру
 burgers.forEach((burger) => {
     burger.addEventListener('click', () => {
         burger.classList.toggle('active');
         menu.classList.toggle('active');
-        toggleScroll(); // Проверяем скролл после клика
+        toggleScroll(); 
     });
 });
 
-// Клик по ссылкам (закрываем всё)
 navLinks.forEach(link => {
     link.addEventListener('click', () => {
         burgers.forEach(burger => burger.classList.remove('active'));
         menu.classList.remove('active');
-        toggleScroll(); // Разблокируем скролл, так как меню закрылось
+        toggleScroll(); 
     });
 });
 
-
+// slider
 
 const cards = document.querySelectorAll('.card');
 const dots = document.querySelectorAll('.dot');
@@ -182,6 +186,8 @@ dots.forEach((dot, index) => {
         updateSlider(currentIndex);
     });
 });
+
+// features list
 
 const list = document.querySelector('.features__list');
 
