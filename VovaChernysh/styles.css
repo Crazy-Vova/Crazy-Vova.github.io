@@ -1,3 +1,6 @@
+head {
+    scroll-behavior: smooth;
+}
 body {
     background-color: black;
     padding: 0px;

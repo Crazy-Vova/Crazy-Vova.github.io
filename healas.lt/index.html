@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="pictures/joystick.ico">
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HEALAS.LT</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+</head>
+<body>
+        <header>
+            <div class="container">
+                <nav>
+                    <img src="pictures/logo.png" alt="">
+                    <div class="burger" id="burger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="ul__container" id="menu">
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About Us</a></li>
+                            <li><a href="#prices">Prices</a></li>
+                            <li><button class="basic-button">Get Started Now</button></li>
+                        </ul>
+                    </div>
+                </nav>
+                
+            </div>
+        </header>
+        <section class="first__container" id="about">
+            <div class="container section first__section">
+                <img src="pictures/first-section.png" alt="">
+                <div class="section__title title">
+                    <h3>About VR Glasses</h3>
+                    <h2>The New VR Glasses Series</h2>
+                    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters as opposed.</p>
+                    <button class="basic-button">Get Started Now</button>
+                </div>
+            </div>
+        </section>
+        <section class="second__container">
+            <div class="container section second__section">
+                <div class="section__title title">
+                    <h3>About XBOX, PS</h3>
+                    <h2>The New Xbox, Ps Series</h2>
+                    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters as opposed.</p>
+                    <button class="basic-button">Get Started Now</button>
+                </div>
+                <img src="pictures/second-section.png" alt="">
+            </div>
+        </section>
+        <section class="pricing__container" id="prices">
+        <div class="container pricing__section">
+            <div class="pricing__header">
+                <h3>Our Pricing</h3>
+                <h2>Choose Your Plan</h2>
+            </div>
+            
+            <div class="cards__wrapper">
+    <div class="card">
+        <h4 class="card__title">Basic</h4>
+        <div class="card__price"><span>$</span>50.00 <small>/ Per Hour</small></div>
+        <ul class="card__features">
+            <li>10 users included</li>
+            <li>2 GB of storage</li>
+            <li>Email support</li>
+            <li>Help center access</li>
+            <li>2 users access</li>
+        </ul>
+        <button class="card__button">Select This Plan</button>
+    </div>
+
+    <div class="card card--active">
+        <h4 class="card__title">Standard</h4>
+        <div class="card__price"><span>$</span>95.00 <small>/ Per Hour</small></div>
+        <ul class="card__features">
+            <li>15 users included</li>
+            <li>5 GB of storage</li>
+            <li>Email support</li>
+            <li>Help center access</li>
+            <li>5 users access</li>
+        </ul>
+        <button class="card__button">Select This Plan</button>
+    </div>
+
+    <div class="card">
+        <h4 class="card__title">Premium</h4>
+        <div class="card__price"><span>$</span>120.00 <small>/ Per Hour</small></div>
+        <ul class="card__features">
+            <li>50 users included</li>
+            <li>10 GB of storage</li>
+            <li>Email support</li>
+            <li>Help center access</li>
+            <li>10 users access</li>
+        </ul>
+        <button class="card__button">Select This Plan</button>
+    </div>
+</div>
+
+<template id="badge-template">
+    <div class="card__badge">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="12" cy="12" r="12" fill="#EB8382"/>
+            <path d="M8 12.5L11 15.5L16 9.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    </div>
+</template>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container footer__wrapper">
+            <div class="footer__logo">
+                <img src="pictures/logo.png" alt="HEALAS.LT">
+            </div>
+            <div class="footer__copy">
+                Copyright © 2022 HEALAS.LT. All Rights Reserved.
+            </div>
+            <div class="footer__socials">
+                <a href="https://www.facebook.com/healas.lt" class="social-icon">
+                    <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/></svg>
+                </a>
+                <a href="https://www.tiktok.com/@healaslt" class="social-icon">
+                    <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.055-4.425 5.055H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865l8.875 11.633Z"/></svg>
+                </a>
+                <a href="https://www.instagram.com/healas.lt/" class="social-icon">
+                    <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.003 1.284c2.12 0 2.37.008 3.208.046.778.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.707.275 1.486.038.837.046 1.07.046 3.208s-.008 2.37-.046 3.208c-.036.779-.166 1.204-.276 1.486a2.38 2.38 0 0 1-.599.92c-.28.28-.546.453-.92.598-.282.11-.707.24-1.486.275-.838.038-1.07.046-3.208.046s-2.37-.008-3.208-.046c-.779-.036-1.204-.166-1.486-.276a2.47 2.47 0 0 1-.92-.599 2.47 2.47 0 0 1-.6-.92c-.109-.281-.24-.707-.275-1.486-.038-.838-.046-1.07-.046-3.208s.008-2.37.046-3.208c.035-.779.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.707-.24 1.486-.275.838-.038 1.079-.046 3.208-.046zM8 3.89a4.11 4.11 0 1 0 0 8.22 4.11 4.11 0 0 0 0-8.22zm0 6.936a2.826 2.826 0 1 1 0-5.652 2.826 2.826 0 0 1 0 5.652zm3.669-7.014a.972.972 0 1 0 0 1.944.972 0 0 0 0-1.944z"/></svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+    <div class="modal-overlay" id="modalOverlay">
+    <div class="modal-window">
+        <button class="modal-close" id="modalClose">&times;</button>
+        
+        <div class="modal-header">
+            <h2>Get Started</h2>
+            <p>Leave your details and our team will contact you shortly.</p>
+        </div>
+        
+        <form class="modal-form">
+    <div class="form-group">
+        <label for="modalName">Your Name</label>
+        <input type="text" id="modalName" placeholder="John Doe">
+    </div>
+    <div class="form-group">
+        <label for="modalEmail">Email Address</label>
+        <input type="email" id="modalEmail" placeholder="example@mail.com">
+    </div>
+    <div class="form-group">
+        <label for="modalPlan">Selected Plan</label>
+        <select id="modalPlan">
+            <option value="basic">Basic Plan — $50.00/h</option>
+            <option value="standard" selected>Standard Plan — $95.00/h</option>
+            <option value="premium">Premium Plan — $120.00/h</option>
+        </select>
+    </div>
+    <button type="button" class="basic-button form-submit-btn">Submit Request</button>
+</form>
+    </div>
+</div>
+<div class="toast-notification" id="toastNotification">
+    Request submitted!
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
